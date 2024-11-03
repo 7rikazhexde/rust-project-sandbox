@@ -1,0 +1,16 @@
+{
+    "files.exclude": {
+        // glob pattern settings to exclude files and folders
+        // Explorer determines which files and folders to show or hide based on this setting. (true is hidden)
+        // Display the .git folder
+        "**/.git": false
+    },
+    "[rust]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "rust-lang.rust-analyzer",
+        //"editor.inlayHints.enabled": "offUnlessPressed"
+    },
+    "rust-analyzer.checkOnSave": true,
+    "rust-analyzer.check.command": "clippy",
+    "rust-analyzer.check.extraArgs": ["--", "-A", "clippy::needless_return"]
+}
